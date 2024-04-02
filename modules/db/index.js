@@ -5,11 +5,11 @@ module.exports = () => {
         return knex(
             'pg',
             {
-                host: '84.252.75.100',
+                host: process.env.DB_HOST,
                 port: 5432,
-                user: 'lessons',
-                password: 'le22on2',
-                database: 'lessons',
+                user: process.env.DB_USER,
+                password: process.env.DB_PASS,
+                database: process.env.DB_NAME,
             },
         );
     }
@@ -18,3 +18,4 @@ module.exports = () => {
         connection
     }
 }
+

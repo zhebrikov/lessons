@@ -1,5 +1,5 @@
 const filters = require("../../modules/db/helpers/filters");
-const transform = require("../../modules/db/helpers/transform");
+const transform = require("../../helpers/transform");
 
 module.exports = async (req, res, dependes = {}) => {
     const { db } = dependes;
